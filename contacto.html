@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contacto</title>
+  <meta name="description" content="Formulario de contacto" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="cabecera-principal">
+    <div class="container">
+      <h1 class="logo"> Mi sitio de Turismo 🏨</h1>
+      <nav class="menu-navegacion" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="atracciones.html">Atracciones</a></li>
+          <li><a href="alojamiento.html">Alojamiento</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <button id="toggleTheme" class="theme-btn" aria-label="Alternar tema">🌙</button>
+    </div>
+  </header>
+  <main class="contenedor-principal container contacto-fondo">
+<section class="seccion">
+<h2>📩 Contacto</h2>
+<p>Envíanos un mensaje.</p>
+<form>
+<label>Nombre:</label><br><input type="text"><br>
+<label>Email:</label><br><input type="email"><br>
+<label>Mensaje:</label><br><textarea></textarea><br>
+<button>Enviar</button>
+</form>
+</section>
+  </main>
+  <footer class="pie-de-pagina">
+    <div class="container">
+      <p>Hecho con ❤ en la clase de Tecnología. &copy; 2025 - Camila Becker</p>
+    </div>
+  </footer>
+  <script>
+    const btn = document.getElementById('toggleTheme');
+    btn.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      btn.textContent = document.documentElement.classList.contains('dark') ? '☀️' : '🌙';
+    });
+  </script>
+</body>
+</html>

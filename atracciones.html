@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Atracciones - San Telmo</title>
+  <meta name="description" content="Atracciones turísticas de San Telmo" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="cabecera-principal">
+    <div class="container">
+      <h1 class="logo"> Mi sitio de Turismo 🏨 </h1>
+      <nav class="menu-navegacion" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="atracciones.html">Atracciones</a></li>
+          <li><a href="alojamiento.html">Alojamiento</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <button id="toggleTheme" class="theme-btn" aria-label="Alternar tema">🌙</button>
+    </div>
+  </header>
+  <main class="contenedor-principal container">
+<section class="seccion">
+<h2>🏛 Atracciones de San Telmo</h2>
+<p>Descubre los principales atractivos turísticos del barrio histórico:</p>
+
+<div class="galeria-atracciones">
+  <div class="atraccion-card">
+    <a href="https://www.google.com/maps/place/Mercado+de+San+Telmo" target="_blank" rel="noopener">
+      <img src="assets/img/mercado_san_telmo.jpg" alt="Mercado de San Telmo">
+      <h3>Mercado de San Telmo</h3>
+    </a>
+    <p>Mercado tradicional lleno de tiendas de antigüedades, libros y artesanías. Un lugar perfecto para explorar la cultura local y encontrar souvenirs únicos.</p>
+  </div>
+
+  <div class="atraccion-card">
+    <a href="https://www.google.com/maps/place/Plaza+Dorrego" target="_blank" rel="noopener">
+      <img src="assets/img/plazadorrego.jpg" alt="Plaza Dorrego">
+      <h3>Plaza Dorrego</h3>
+    </a>
+    <p>Corazón del barrio donde se reúnen artistas y músicos. Los domingos se convierte en una feria de arte callejero con ambiente vibrante y bohemio.</p>
+  </div>
+
+  <div class="atraccion-card">
+    <a href="https://www.google.com/maps/place/Pasaje+Defensa" target="_blank" rel="noopener">
+      <img src="assets/img/San-Telmo-Pasaje-Defensa.png" alt="Pasaje Defensa">
+      <h3>Pasaje Defensa</h3>
+    </a>
+    <p>Pintoresco pasaje con galerías de arte, cafés y tiendas independientes. Un sitio ideal para sumergirse en el ambiente artístico y cultural de San Telmo.</p>
+  </div>
+</div>
+</section>
+  </main>
+  <footer class="pie-de-pagina">
+    <div class="container">
+      <p>Hecho con ❤ en la clase de Tecnología. &copy; 2025 - Camila Becker</p>
+    </div>
+  </footer>
+  <script>
+    const btn = document.getElementById('toggleTheme');
+    btn.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      btn.textContent = document.documentElement.classList.contains('dark') ? '☀️' : '🌙';
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Alojamiento - San Telmo</title>
+  <meta name="description" content="Dónde hospedarse en San Telmo" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="cabecera-principal">
+    <div class="container">
+      <h1 class="logo"> Mi sitio de Turismo 🏨</h1>
+      <nav class="menu-navegacion" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="atracciones.html">Atracciones</a></li>
+          <li><a href="alojamiento.html">Alojamiento</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <button id="toggleTheme" class="theme-btn" aria-label="Alternar tema">🌙</button>
+    </div>
+  </header>
+  <main class="contenedor-principal container no-center">
+<section class="seccion">
+<h2>🏨 Alojamiento en San Telmo</h2>
+<div class="info-left">
+  <p>Opciones recomendadas:</p>
+  <ul>
+    <li>Hotel Intersur San Telmo</li>
+    <li>Hostel tradicional</li>
+  </ul>
+</div>
+<div class="alojamiento-imagenes">
+    <figure class="hotel-card">
+      <img src="assets/img/Hotel_San_Telmo.jpg" alt="Hotel San Telmo">
+      <figcaption>Hotel Intersur San Telmo</figcaption>
+    </figure>
+
+    <figure class="hotel-card">
+      <img src="assets/img/hostel_san.jpg" alt="Hostel San Telmo">
+      <figcaption>Hostel tradicional</figcaption>
+    </figure>
+</div>
+</section>
+  </main>
+  <footer class="pie-de-pagina">
+    <div class="container">
+      <p>Hecho con ❤ en la clase de Tecnología. &copy; 2025 - Camila Becker</p>
+    </div>
+  </footer>
+  <script>
+    const btn = document.getElementById('toggleTheme');
+    btn.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      btn.textContent = document.documentElement.classList.contains('dark') ? '☀️' : '🌙';
+    });
+  </script>
+</body>
+</html>
